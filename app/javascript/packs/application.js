@@ -5,3 +5,16 @@
 
 
 import "@hotwired/turbo-rails"
+
+
+document.addEventListener("turbo:before-render", function(event) {
+  console.log('turbo:before-render', event);
+})
+
+document.addEventListener("turbo:render", function(event) {
+  console.log('turbo:render', event);
+})
+
+document.addEventListener("turbo:load", function(event) {
+  console.log('turbo:load', event);
+})
