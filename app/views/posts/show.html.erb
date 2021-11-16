@@ -2,11 +2,16 @@
 
 <h1>Turbo-Frame Target</h1>
 
+<div>Time: <%= Time.new %></div>
+<br>
 <turbo-frame id="posts">
-  Time: <%= Time.new %>
+  Time: <%= Time.new %> (turbo-frame)
 </turbo-frame>
 
 <br>
 <br>
 
-<%= link_to 'Redirect Back', '/posts/new' %>
+<%= link_to 'Back', '/posts' %>
+<br>
+<%= link_to 'Back via Redirect', '/posts/new' %>
+
