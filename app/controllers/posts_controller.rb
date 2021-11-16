@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    redirect_to '/posts'
+    redirect_to '/posts', notice: "Redirected via GET."
   end
 
   # GET /posts/1/edit
@@ -20,30 +20,12 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
-    @post = Post.new(post_params)
-
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to @post, notice: "Post was successfully created." }
-        format.json { render :show, status: :created, location: @post }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
-    end
+    redirect_to '/posts', notice: "Redirected via POST."
   end
 
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
-    respond_to do |format|
-      if @post.update(post_params)
-        format.html { redirect_to @post, notice: "Post was successfully updated." }
-        format.json { render :show, status: :ok, location: @post }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
-    end
+    redirect_to '/posts', notice: "Redirected via PATCH/PUT"
   end
 
   # DELETE /posts/1 or /posts/1.json

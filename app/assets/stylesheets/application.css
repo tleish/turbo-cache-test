@@ -18,3 +18,13 @@
 turbo-frame {
   border: 5px solid red;
 }
+
+#notice:empty {
+  display: none;
+}
+#notice {
+  background-color: pink;
+  border: 5px solid red;
+}
+
+
