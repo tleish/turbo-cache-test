@@ -25,12 +25,12 @@ class PostsController < ApplicationController
 
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
-    redirect_to '/posts', notice: "Redirected via PATCH/PUT"
+    redirect_to '/posts', notice: "Redirected via PATCH/PUT" , status: 303
   end
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
-    redirect_to '/posts', notice: "Redirected via DELETE"
+    redirect_to '/posts', notice: "Redirected via DELETE", status: 303
   end
 
   private
