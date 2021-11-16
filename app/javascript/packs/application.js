@@ -5,10 +5,12 @@
 
 
 import "@hotwired/turbo-rails"
+// import "./turbo.es2017-esm"
 
 
 document.addEventListener("turbo:before-render", function(event) {
   console.log('turbo:before-render', event);
+
 })
 
 document.addEventListener("turbo:render", function(event) {

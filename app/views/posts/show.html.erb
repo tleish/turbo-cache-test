@@ -13,5 +13,11 @@
 <br>
 <br>
 <%= button_to 'Start via POST Redirect', '/posts' %>
+<br>
+<br>
+<%= button_to 'Start via PUT Redirect', '/posts/1', method: 'put' %>
+<br>
+<br>
+<%= button_to 'Start via DELETE Redirect', post_path(1), method: 'delete' %>
 
 
