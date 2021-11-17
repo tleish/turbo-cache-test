@@ -12,12 +12,15 @@
 <%= link_to 'Start via GET Redirect', '/posts/new' %>
 <br>
 <br>
+<%= button_to 'Start via GET Redirect', '/posts/new', method: 'get' %>
+<br>
+<br>
 <%= button_to 'Start via POST Redirect', '/posts' %>
 <br>
 <br>
 <%= button_to 'Start via PUT Redirect', '/posts/1', method: 'put' %>
 <br>
 <br>
-<%= button_to 'Start via DELETE Redirect', post_path(1), method: 'delete' %>
+<%= button_to 'Start via DELETE Redirect', '/posts/1', method: 'delete' %>
 
 
